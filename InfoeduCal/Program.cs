@@ -32,7 +32,7 @@ namespace InfoeduCal
 
             List<Dogadaj> allEvents = new List<Dogadaj>();
 
-            for (int week = 17; week <= 25; week++)
+            for (int week = 0; week <= 25; week++)
             {
                 currWeekHtml = GetRasporedHtml(table_url, week, authcookie);
                 currWeekJson = ExtractJsonArray(currWeekHtml);
